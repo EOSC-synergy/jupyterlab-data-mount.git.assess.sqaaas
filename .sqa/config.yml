@@ -1,0 +1,68 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/jsc-jupyter/jupyterlab-data-mount:
+      branch: main
+      repo: https://github.com/jsc-jupyter/jupyterlab-data-mount.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/jsc-jupyter/jupyterlab-data-mount git:
+        commands:
+        - /usr/bin/env sh .sqa/script.lanky-champagne-chinook.sh
+        container: qc.acc_scanty-ecru-mammoth
+  QC.Doc:
+    repos:
+      github.com/jsc-jupyter/jupyterlab-data-mount find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.woozy-indigo-ocelot.sh
+        container: qc.doc_hilly-auburn-bordeaux
+      github.com/jsc-jupyter/jupyterlab-data-mount git:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-violet-quetzal.sh
+        container: qc.doc_trippy-peach-rhinoceros
+      github.com/jsc-jupyter/jupyterlab-data-mount markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-olivine-mole.sh
+        container: qc.doc_stinky-cornflower-hyena
+  QC.Lic:
+    repos:
+      github.com/jsc-jupyter/jupyterlab-data-mount licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.frumpy-gold-deer.sh
+        container: qc.lic_stuffy-teal-caterpillar
+  QC.Sec:
+    repos:
+      github.com/jsc-jupyter/jupyterlab-data-mount bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.snappy-silver-sparrow.sh
+        container: qc.sec_silly-chocolate-corgi
+  QC.Sty:
+    repos:
+      github.com/jsc-jupyter/jupyterlab-data-mount flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-cream-akita.sh
+        container: qc.sty_muggy-black-goose
+      github.com/jsc-jupyter/jupyterlab-data-mount jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-cyan-budgerigar.sh
+        container: qc.sty_slimy-salmon-bongo
+  QC.Uni:
+    repos:
+      github.com/jsc-jupyter/jupyterlab-data-mount pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.gummy-cerulean-mammoth.sh
+        container: qc.uni_slaphappy-firebrick-barb
+  QC.Ver:
+    repos:
+      github.com/jsc-jupyter/jupyterlab-data-mount get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-malachite-buzzard.sh
+        container: qc.ver_ready-cinnabar-frise
+timeout: 5400
