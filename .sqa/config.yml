@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-vermilion-snail.sh
-        container: qc.acc_flabby-pink-tarsier
+        - /usr/bin/env sh .sqa/script.skimpy-saffron-badger.sh
+        container: qc.acc_sleazy-pumpkin-saola
   QC.Doc:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-brown-liger.sh
-        container: qc.doc_sunny-pear-barnacle
+        - /usr/bin/env sh .sqa/script.ugly-mustard-spoonbill.sh
+        container: qc.doc_muzzy-puce-setter
       github.com/jsc-jupyter/jupyterlab-data-mount git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-mustard-shrimp.sh
-        container: qc.doc_beady-flax-newfoundland
+        - /usr/bin/env sh .sqa/script.squeaky-amber-greyhound.sh
+        container: qc.doc_bumpy-crimson-eagle
       github.com/jsc-jupyter/jupyterlab-data-mount markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-chestnut-jackal.sh
-        container: qc.doc_woolly-bistre-chimpanzee
+        - /usr/bin/env sh .sqa/script.snoopy-red-hyrax.sh
+        container: qc.doc_slimy-taupe-koala
   QC.Lic:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-celadon-ladybird.sh
-        container: qc.lic_queasy-salmon-serval
+        - /usr/bin/env sh .sqa/script.stinky-copper-ray.sh
+        container: qc.lic_dorky-olive-spaniel
   QC.Sec:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-amaranth-wallaby.sh
-        container: qc.sec_breezy-ecru-beagle
+        - /usr/bin/env sh .sqa/script.gimpy-bronze-hyrax.sh
+        container: qc.sec_smelly-olivine-millipede
   QC.Sty:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-mauve-bee.sh
-        container: qc.sty_randy-cerulean-bulldog
+        - /usr/bin/env sh .sqa/script.shabby-eggplant-fly.sh
+        container: qc.sty_flabby-blue-bear
       github.com/jsc-jupyter/jupyterlab-data-mount jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-apricot-harrier.sh
-        container: qc.sty_crabby-amethyst-tamarin
+        - /usr/bin/env sh .sqa/script.blurry-coral-dog.sh
+        container: qc.sty_gloppy-magenta-greyhound
   QC.Uni:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-heliotrope-pig.sh
-        container: qc.uni_freaky-cornflower-havanese
+        - /usr/bin/env sh .sqa/script.randy-emerald-greyhound.sh
+        container: qc.uni_shaggy-cardinal-bullfrog
   QC.Ver:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-periwinkle-ocelot.sh
-        container: qc.ver_sickly-black-forest
+        - /usr/bin/env sh .sqa/script.wheezy-myrtle-dugong.sh
+        container: qc.ver_breezy-rust-maltese
 timeout: 5400
