@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/jsc-jupyter/jupyterlab-data-mount:
       branch: main
@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount git:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-saffron-badger.sh
-        container: qc.acc_sleazy-pumpkin-saola
+        - /usr/bin/env sh .sqa/script.tacky-scarlet-rottweiler.sh
+        container: qc.acc_flaky-chestnut-bracke
   QC.Doc:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-mustard-spoonbill.sh
-        container: qc.doc_muzzy-puce-setter
+        - /usr/bin/env sh .sqa/script.shaky-asparagus-bloodhound.sh
+        container: qc.doc_snoopy-yellow-hummingbird
       github.com/jsc-jupyter/jupyterlab-data-mount git:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-amber-greyhound.sh
-        container: qc.doc_bumpy-crimson-eagle
+        - /usr/bin/env sh .sqa/script.flaky-wheat-impala.sh
+        container: qc.doc_pasty-sapphire-quetzal
       github.com/jsc-jupyter/jupyterlab-data-mount markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-red-hyrax.sh
-        container: qc.doc_slimy-taupe-koala
+        - /usr/bin/env sh .sqa/script.freaky-celadon-fousek.sh
+        container: qc.doc_sleepy-pumpkin-russel
   QC.Lic:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-copper-ray.sh
-        container: qc.lic_dorky-olive-spaniel
+        - /usr/bin/env sh .sqa/script.whiny-gamboge-bracke.sh
+        container: qc.lic_gimpy-periwinkle-seahorse
   QC.Sec:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-bronze-hyrax.sh
-        container: qc.sec_smelly-olivine-millipede
+        - /usr/bin/env sh .sqa/script.whiny-viridian-cichlid.sh
+        container: qc.sec_muzzy-crimson-crane
   QC.Sty:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-eggplant-fly.sh
-        container: qc.sty_flabby-blue-bear
+        - /usr/bin/env sh .sqa/script.jumpy-amber-hyena.sh
+        container: qc.sty_lousy-auburn-crab
       github.com/jsc-jupyter/jupyterlab-data-mount jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-coral-dog.sh
-        container: qc.sty_gloppy-magenta-greyhound
+        - /usr/bin/env sh .sqa/script.jumpy-blue-tortoise.sh
+        container: qc.sty_sickly-rust-insect
   QC.Uni:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-emerald-greyhound.sh
-        container: qc.uni_shaggy-cardinal-bullfrog
+        - /usr/bin/env sh .sqa/script.stinky-tomato-bulldog.sh
+        container: qc.uni_skimpy-viridian-fish
   QC.Ver:
     repos:
       github.com/jsc-jupyter/jupyterlab-data-mount get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-myrtle-dugong.sh
-        container: qc.ver_breezy-rust-maltese
+        - /usr/bin/env sh .sqa/script.stealthy-jade-hamster.sh
+        container: qc.ver_wheezy-xanthic-termite
 timeout: 5400
